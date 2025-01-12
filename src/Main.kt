@@ -2,9 +2,24 @@ import classes.Rectangulo
 
 fun main() {
 
-    val rectangulo = Rectangulo(0,10)
+    val rectangulo1 = Rectangulo(15.0,10.0)
 
-    println("El rectángulo con base y altura ${rectangulo.consultarBaseAltura()}")
-    println("Tiene un área de ${rectangulo.calcularArea()} y un perímetro de ${rectangulo.calcularPerimetro()}.")
+    println("\u001B[31m** INFORMACIÓN RECTÁNGULO1 **\u001B[0m\n$rectangulo1")
+    println("Area >> ${rectangulo1.calcularArea()}")
+    println("Perímetro >> ${rectangulo1.calcularPerimetro()}")
+    println("")
+
+    val rectangulo2 = Rectangulo(5.0,10.0)
+
+    println("** INFORMACIÓN RECTÁNGULO2 **\n$rectangulo2")
+    println("Area >> ${rectangulo2.calcularArea()}")
+    println("Perímetro >> ${rectangulo2.calcularPerimetro()}")
+    println("")
+
+    val rectangulo3 = Rectangulo(5.0,10.0)
+
+    println("** INFORMACIÓN RECTÁNGULO3 **\n$rectangulo3")
+    println("Area >> ${rectangulo3.calcularArea()}")
+    println("Perímetro >> ${rectangulo3.calcularPerimetro()}")
 
 }

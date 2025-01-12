@@ -1,6 +1,6 @@
 package classes
 
-class Rectangulo (val base: Int, val altura: Int) {
+class Rectangulo (val base: Double, val altura: Double) {
 
     init {
         try {
@@ -12,29 +12,16 @@ class Rectangulo (val base: Int, val altura: Int) {
     }
 
 
-    fun consultarBaseAltura(): Pair<Int, Int>? {
-        return if (altura != 0 && base != 0) {
-            Pair(base, altura)
-        } else {
-            null
-        }
+    fun calcularArea(): Double {
+        return base * altura
     }
 
 
-    fun calcularArea(): Int? {
-        return if (altura != 0 && base != 0) {
-            base * altura
-        } else {
-            null
-        }
+    fun calcularPerimetro(): Double {
+        return 2 * (base * altura)
     }
 
-    fun calcularPerimetro(): Int? {
-        return if (altura != 0 && base != 0) {
-            (2 * (base * altura))
-        } else {
-            null
-        }
+    override fun toString(): String {
+        return "Base: $base y Altura: $altura"
     }
-
 }
